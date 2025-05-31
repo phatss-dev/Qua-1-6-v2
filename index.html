@@ -303,9 +303,8 @@
     <p>Nhấn mở quà để bắt đầu 💖</p>
   </div>
 <!-- nhạc-->
-<audio autoplay loop>
-  <source src="trinh.mp3" type="audio/mpeg">
-  Trình duyệt của bạn không hỗ trợ phát nhạc.
+<audio id="audio" loop>
+    <source src="trinh.mp3" type="audio/mpeg">
 </audio>
   
   <!-- Màn hình nhập tên -->
@@ -356,7 +355,13 @@
   <script>
     // Mật khẩu mặc định để mở khóa
     const PASSWORD = 'cobecuaanh';
-
+    // click đẻ chạy nhạc
+    document.body.addEventListener('click', function playMusicOnce() {
+      const audio = document.getElementById('audio');
+      audio.play();
+      // Chỉ chạy một lần duy nhất
+      document.body.removeEventListener('click', playMusicOnce);
+    });
     // DOM elements
     const unlockStage = document.getElementById('unlockStage');
     const startStage = document.getElementById('startStage');
