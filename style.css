@@ -1,11 +1,20 @@
+.heart-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .heart {
-  width: 36px;       /* 👈 Nhỏ như emoji */
-  height: 36px;
+  width: 32px;          /* 👈 Kích thước nhỏ như emoji */
+  height: 32px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;   /* Bo góc nhẹ nếu ảnh có viền */
 }
 
 .heart:hover {
-  transform: scale(1.2);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);                        /* Phóng to khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);     /* Bóng đổ nhẹ */
 }
