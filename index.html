@@ -485,15 +485,15 @@
     const thankYouMessages = {
       '1': `Cảm ơn em đã chọn trái tim ngọt ngào này.\nChúc em luôn vui vẻ và tràn đầy yêu thương!`,
       '2': ` Chúc em 1/6 vui vẻ nhee, anh biết 1/6 là quốc tế thiếu nhi nhưng đối với anh em luôn là một em bé đángg iu.\n Chúc em khogg chỉ 1/6 mà sau sau nữa luôn vui vẻ, hạnh phúc và thành công trog cuộc sống của chính bản thân!`,
-      '3': `Bạn đã chọn trái tim 🧡 ấm áp.\nMong rằng mỗi ngày của bạn đều tràn ngập niềm vui!`,
-      '4': `Trái tim 💜 tím nhẹ nhàng và sâu sắc.\nChúc bạn sức khỏe và thành công mọi điều!`,
-      '5': `Bạn yêu thích trái tim 💖 rực rỡ này.\nChúc bạn một ngày Quốc tế Thiếu nhi thật đáng nhớ và hạnh phúc!`,
+      '3': ` Em biết không. Khi anh nói 'anh yêu em' nghĩa là anh thật sự yêu em không ai cả. Chỉ em và 1 mình em thôi🥺.\n Anh yêu em`,
+      '4': `Xin lỗi vì những lần đã làm em buồn 😞`,
+      '5': `Nay 1/6 chúc ebe của anh ngày càng xinh đẹp càng yêu anh hơn.\n Chúc em có 1 ngày thật tuyệt vời chúc ebe của anh thật nhiều hạnh phúc😘`,
     };
 
     function showThankYouCard(heartValue) {
       const name = sessionStorage.getItem('userName') || 'Bạn';
       const msg = thankYouMessages[heartValue] || 'Cảm ơn bạn đã tham gia!';
-      cardText.textContent = `Chào ${name}!\n\n${msg}`;
+      cardText.textContent = `Chào ${name}!\n\n${msg} yêu dấu của tuii`;
       fromTag.style.opacity = '0';
       fromTag.textContent = '💖 Quốc Tế 1/6 Cô Pé';
       showStage(cardStage);
