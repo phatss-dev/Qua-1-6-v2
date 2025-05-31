@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quốc Tế 1/6 Cô Pé 💖</title>
+  <title>Quốc Tế 1/6 💖</title>
 
   <!-- Font Awesome -->
   <link
@@ -325,7 +325,7 @@
 
   <!-- Màn hình chọn tim -->
 <div id="heartStage" class="stage" style="flex-direction: column;">
-  <div class="heart-instruction">Chọn 1 trái tim mà bạn thích nhất 💖</div>
+  <div class="heart-instruction">Chọn 1 trái tim mà em thích nhất 💖</div>
 
   <div class="heart-container" role="list" aria-label="Danh sách trái tim để chọn">
     <img src="heart1.png" role="listitem" tabindex="0" class="heart" alt="Trái tim màu hồng nhạt" data-value="1" />
@@ -496,11 +496,11 @@
     };
 
     function showThankYouCard(heartValue) {
-      const name = sessionStorage.getItem('userName') || 'Bạn';
-      const msg = thankYouMessages[heartValue] || 'Cảm ơn bạn đã tham gia!';
+      const name = sessionStorage.getItem('userName') || 'em';
+      const msg = thankYouMessages[heartValue] || 'Cảm ơn em đã tham gia!';
       cardText.textContent = `Chào ${name}!\n\n${msg} yêu dấu của tuii`;
       fromTag.style.opacity = '0';
-      fromTag.textContent = '💖 Quốc Tế 1/6 Cô Pé';
+      fromTag.textContent = '💖 Quốc Tế 1/6 vui vẻ 😘';
       showStage(cardStage);
 
       // Hiệu ứng hiện dần phần fromTag
