@@ -498,7 +498,7 @@
     function showThankYouCard(heartValue) {
       const name = sessionStorage.getItem('userName') || 'em';
       const msg = thankYouMessages[heartValue] || 'Cảm ơn em đã tham gia!';
-      cardText.textContent = `Chào ${name}!\n\n${msg} yêu dấu của tuii`;
+      cardText.textContent = `Chào ${name}!\n\n${msg} 😻`;
       fromTag.style.opacity = '0';
       fromTag.textContent = '💖 Quốc Tế 1/6 vui vẻ 😘';
       showStage(cardStage);
