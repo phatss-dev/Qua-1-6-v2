@@ -7,8 +7,8 @@
 }
 
 .heart {
-  width: 32px;          /* 👈 Kích thước nhỏ như emoji */
-  height: 32px;
+  width: 36px;          /* 👈 Kích thước nhỏ như emoji */
+  height: 36px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-radius: 8px;   /* Bo góc nhẹ nếu ảnh có viền */
